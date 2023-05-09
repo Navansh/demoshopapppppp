@@ -30,10 +30,14 @@ const App = () => {
     },
   ];
 
+  function printProductData(data){
+    console.log("Haan bhai aa gya data");
+    console.log(data);
+  }
 
   return (
     <div>
-      <NewProduct></NewProduct>
+      <NewProduct fromParent = {printProductData}></NewProduct>
       <Products items={products} />
     </div>
   );
